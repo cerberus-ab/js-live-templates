@@ -2,7 +2,8 @@
 The set of javascript live templates for IntelliJ IDEs (Idea, PHPStorm & others).
 
 ### Usage
-To use the live templates:
+To use the live templates:  
+
 1. Copy **templates.xml** content to system clipboard.
 2. In the Live Templates page of the Settings/Preferences dialog, select the group where you want to insert the copied live templates.
 3. Right-click the selection, and choose Paste on the context menu.
