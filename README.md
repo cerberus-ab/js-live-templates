@@ -12,6 +12,7 @@ To use the live templates:
 + [amdini](#amdini)
 + [amdini_bbm](#amdini_bbm)
 + [amdini_bbv](#amdini_bbv)
++ [amdini_bbl](#amdini_bbl)
 
 ##### amdini
 Init amd module:
@@ -91,6 +92,10 @@ define([
     
             );
         },
+        
+        events: {
+            
+        },
 
         $END$
     });
@@ -100,3 +105,66 @@ define([
 ```
 * `DESCRIPTION` - Module description
 * `MODULE` - Module/class name
+
+##### amdini_bbl
+Init amd backbone simple layout
+```
+/**
+ * $DESCRIPTION$
+ *
+ * @module $MODULE$
+ * @returns {Backbone.View}
+ */
+define([
+    'lodash',
+    'backbone',
+    'text!./jst/$TEMPLATE$.jst'
+
+], function(
+    _,
+    Backbone,
+    jstTemplate
+
+) {
+    'use strict';
+
+    var $MODULE$ = Backbone.View.extend({
+    
+        template: _.template(jstTemplate),
+
+        initialize: function(options) {
+            _.bindAll(this,
+                'render'
+    
+            );
+        },
+        
+        events: {
+            
+        },
+        
+        render: function() {
+            this.beforeRender();
+            
+            this.$el.html(this.template(this.serialize()));
+            
+            this.afterRender();
+            return this;
+        },
+        
+        serialize: function() {
+            return {};
+        },
+        
+        beforeRender: function() {},
+        afterRender: function() {},
+
+        $END$
+    });
+
+    return $MODULE$;
+});
+```
+* `DESCRIPTION` - Module description
+* `MODULE` - Module/class name
+* `TEMPLATE` - Used JavaScript template

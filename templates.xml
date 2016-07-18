@@ -5,6 +5,14 @@
         <option name="JS_STATEMENT" value="true" />
     </context>
 </template>
+<template name="amdini_bbl" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @module $MODULE$&#10; * @returns {Backbone.View}&#10; */&#10;define([&#10;    'lodash',&#10;    'backbone',&#10;    'text!./jst/$TEMPLATE$.jst'&#10;&#10;], function(&#10;    _,&#10;    Backbone,&#10;    jstTemplate&#10;&#10;) {&#10;    'use strict';&#10;&#10;    var $MODULE$ = Backbone.View.extend({&#10;    &#10;        template: _.template(jstTemplate),&#10;&#10;        initialize: function(options) {&#10;            _.bindAll(this,&#10;                'render'&#10;    &#10;            );&#10;        },&#10;        &#10;        events: {&#10;            &#10;        },&#10;        &#10;        render: function() {&#10;            this.beforeRender();&#10;            &#10;            this.$el.html(this.template(this.serialize()));&#10;            &#10;            this.afterRender();&#10;            return this;&#10;        },&#10;        &#10;        serialize: function() {&#10;            return {};&#10;        },&#10;        &#10;        beforeRender: function() {},&#10;        afterRender: function() {},&#10;&#10;        $END$&#10;    });&#10;&#10;    return $MODULE$;&#10;});" description="Init amd backbone simple layout" toReformat="false" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TEMPLATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+        <option name="JS_STATEMENT" value="true" />
+    </context>
+</template>
 <template name="amdini_bbm" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @module $MODULE$&#10; * @returns {Backbone.Model}&#10; */&#10;define([&#10;    'lodash',&#10;    'backbone'&#10;&#10;], function(&#10;    _,&#10;    Backbone&#10;&#10;) {&#10;    'use strict';&#10;&#10;    var $MODULE$ = Backbone.Model.extend({&#10;        $END$&#10;    });&#10;&#10;    return $MODULE$;&#10;});" description="Init amd backbone model" toReformat="false" toShortenFQNames="true">
     <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
@@ -12,7 +20,7 @@
         <option name="JS_STATEMENT" value="true" />
     </context>
 </template>
-<template name="amdini_bbv" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @module $MODULE$&#10; * @returns {Backbone.View}&#10; */&#10;define([&#10;    'lodash',&#10;    'backbone'&#10;&#10;], function(&#10;    _,&#10;    Backbone&#10;&#10;) {&#10;    'use strict';&#10;&#10;    var $MODULE$ = Backbone.View.extend({&#10;&#10;        initialize: function(options) {&#10;            _.bindAll(this,&#10;                'render'&#10;    &#10;            );&#10;        },&#10;&#10;        $END$&#10;    });&#10;&#10;    return $MODULE$;&#10;});" description="Init amd backbone view" toReformat="false" toShortenFQNames="true">
+<template name="amdini_bbv" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @module $MODULE$&#10; * @returns {Backbone.View}&#10; */&#10;define([&#10;    'lodash',&#10;    'backbone'&#10;&#10;], function(&#10;    _,&#10;    Backbone&#10;&#10;) {&#10;    'use strict';&#10;&#10;    var $MODULE$ = Backbone.View.extend({&#10;&#10;        initialize: function(options) {&#10;            _.bindAll(this,&#10;                'render'&#10;    &#10;            );&#10;        },&#10;        &#10;        events: {&#10;            &#10;        },&#10;&#10;        $END$&#10;    });&#10;&#10;    return $MODULE$;&#10;});" description="Init amd backbone view" toReformat="false" toShortenFQNames="true">
     <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
