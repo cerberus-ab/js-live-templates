@@ -191,7 +191,7 @@ var $CLASSNAME$ = (function(){
           
             instance = this;
         } else {
-            return new $CLASSNAME$.apply(this, arguments);
+            return new $CLASSNAME$($ARGS$);
         }
     }
  })();

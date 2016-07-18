@@ -27,7 +27,7 @@
         <option name="JS_STATEMENT" value="true" />
     </context>
 </template>
-<template name="dp_singleton" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @constructor $CLASSNAME$&#10; */&#10;var $CLASSNAME$ = (function(){&#10;    var instance = null;&#10;    &#10;    return function $CLASSNAME$($ARGS$) {&#10;        if (instance) {&#10;            return instance;&#10;        }&#10;        if (this &amp;&amp; this.constructor === $CLASSNAME$) {&#10;            // constructor&#10;            $END$&#10;          &#10;            instance = this;&#10;        } else {&#10;            return new $CLASSNAME$.apply(this, arguments);&#10;        }&#10;    }&#10; })();" description="Init Singleton class" toReformat="false" toShortenFQNames="true">
+<template name="dp_singleton" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @constructor $CLASSNAME$&#10; */&#10;var $CLASSNAME$ = (function(){&#10;    var instance = null;&#10;    &#10;    return function $CLASSNAME$($ARGS$) {&#10;        if (instance) {&#10;            return instance;&#10;        }&#10;        if (this &amp;&amp; this.constructor === $CLASSNAME$) {&#10;            // constructor&#10;            $END$&#10;          &#10;            instance = this;&#10;        } else {&#10;            return new $CLASSNAME$($ARGS$);&#10;        }&#10;    }&#10; })();" description="Init Singleton class" toReformat="false" toShortenFQNames="true">
     <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="CLASSNAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
