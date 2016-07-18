@@ -17,11 +17,11 @@ To use the live templates:
 Init amd module:
 ```
 /**
-* $DESCRIPTION$
-*
-* @module $MODULE$
-* @returns {constructor}
-*/
+ * $DESCRIPTION$
+ *
+ * @module $MODULE$
+ * @returns {constructor}
+ */
 define([], function() {
     'use strict';
 
@@ -37,11 +37,11 @@ define([], function() {
 Init amd backbone model:
 ```
 /**
-* $DESCRIPTION$
-*
-* @module $MODULE$
-* @returns {Backbone.Model}
-*/
+ * $DESCRIPTION$
+ *
+ * @module $MODULE$
+ * @returns {Backbone.Model}
+ */
 define([
     'lodash',
     'backbone'
@@ -67,11 +67,11 @@ define([
 Init amd backbone view
 ```
 /**
-* $DESCRIPTION$
-*
-* @module $MODULE$
-* @returns {Backbone.View}
-*/
+ * $DESCRIPTION$
+ *
+ * @module $MODULE$
+ * @returns {Backbone.View}
+ */
 define([
     'lodash',
     'backbone'
