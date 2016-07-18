@@ -13,6 +13,7 @@ To use the live templates:
 + [amdini_bbm](#amdini_bbm)
 + [amdini_bbv](#amdini_bbv)
 + [amdini_bbl](#amdini_bbl)
++ [dp_singleton](#dp_singleton)
 
 ##### amdini
 Init amd module:
@@ -168,3 +169,33 @@ define([
 * `DESCRIPTION` - Module description
 * `MODULE` - Module/class name
 * `TEMPLATE` - Used JavaScript template
+
+##### dp_singleton
+Init Singleton class:
+```
+/**
+ * $DESCRIPTION$
+ *
+ * @constructor $CLASSNAME$
+ */
+var $CLASSNAME$ = (function(){
+    var instance = null;
+    
+    return function $CLASSNAME$($ARGS$) {
+        if (instance) {
+            return instance;
+        }
+        if (this && this.constructor === $CLASSNAME$) {
+            // constructor
+            $END$
+          
+            instance = this;
+        } else {
+            return new $CLASSNAME$.apply(this, arguments);
+        }
+    }
+ })();
+```
+* `DESCRIPTION` - Class description
+* `CLASSNAME` - Class name
+* `ARGS` - Constructor arguments
