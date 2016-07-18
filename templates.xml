@@ -1,0 +1,21 @@
+<template name="amdini" value="/**&#10;* $DESCRIPTION$&#10;*&#10;* @module $MODULE$&#10;* @returns {constructor}&#10;*/&#10;define([], function() {&#10;    'use strict';&#10;&#10;    var $MODULE$ = $END$;&#10;&#10;    return $MODULE$;&#10;});" description="Init amd module" toReformat="false" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+        <option name="JS_STATEMENT" value="true" />
+    </context>
+</template>
+<template name="amdini_bbm" value="/**&#10;* $DESCRIPTION$&#10;*&#10;* @module $MODULE$&#10;* @returns {Backbone.Model}&#10;*/&#10;define([&#10;    'lodash',&#10;    'backbone'&#10;&#10;], function(&#10;    _,&#10;    Backbone&#10;&#10;) {&#10;    'use strict';&#10;&#10;    var $MODULE$ = Backbone.Model.extend({&#10;        $END$&#10;    });&#10;&#10;    return $MODULE$;&#10;});" description="Init amd backbone model" toReformat="false" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+        <option name="JS_STATEMENT" value="true" />
+    </context>
+</template>
+<template name="amdini_bbv" value="/**&#10;* $DESCRIPTION$&#10;*&#10;* @module $MODULE$&#10;* @returns {Backbone.View}&#10;*/&#10;define([&#10;    'lodash',&#10;    'backbone'&#10;&#10;], function(&#10;    _,&#10;    Backbone&#10;&#10;) {&#10;    'use strict';&#10;&#10;    var $MODULE$ = Backbone.View.extend({&#10;&#10;    initialize: function(options) {&#10;        _.bindAll(this,&#10;            'render'&#10;&#10;        );&#10;    },&#10;&#10;        $END$&#10;    });&#10;&#10;    return $MODULE$;&#10;});" description="Init amd backbone view" toReformat="false" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MODULE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+        <option name="JS_STATEMENT" value="true" />
+    </context>
+</template>
