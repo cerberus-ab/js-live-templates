@@ -189,8 +189,8 @@ function $CLASSNAME$($ARGS$) {
 * `DESCRIPTION` - Class description
 * `CLASSNAME` - Class name
 * `ARGS` - Constructor arguments
-* `PRIVATE` - Private path
-* `PUBLIC` - Public path
+* `PRIVATE` - Private part
+* `PUBLIC` - Public part
 
 ##### dp_singleton
 Init Singleton class:
