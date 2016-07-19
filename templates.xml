@@ -35,3 +35,13 @@
         <option name="JS_STATEMENT" value="true" />
     </context>
 </template>
+<template name="dp_module" value="/**&#10; * $DESCRIPTION$&#10; *&#10; * @constructor $CLASSNAME$&#10; */&#10;function $CLASSNAME$($ARGS$) {&#10;    $PRIVATE$&#10;    return {&#10;        $PUBLIC$&#10;    }&#10;}" description="Init general module class" toReformat="false" toShortenFQNames="true">
+    <variable name="DESCRIPTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CLASSNAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PRIVATE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="PUBLIC" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+        <option name="JS_STATEMENT" value="true" />
+    </context>
+</template>

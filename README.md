@@ -170,6 +170,27 @@ define([
 * `MODULE` - Module/class name
 * `TEMPLATE` - Used JavaScript template
 
+##### dp_module
+Init general module class:
+```
+/**
+ * $DESCRIPTION$
+ *
+ * @constructor $CLASSNAME$
+ */
+function $CLASSNAME$($ARGS$) {
+    $PRIVATE$
+    return {
+        $PUBLIC$
+    }
+}
+```
+* `DESCRIPTION` - Class description
+* `CLASSNAME` - Class name
+* `ARGS` - Constructor arguments
+* `PRIVATE` - Private path
+* `PUBLIC` - Public path
+
 ##### dp_singleton
 Init Singleton class:
 ```
