@@ -13,6 +13,7 @@ To use the live templates:
 + [amdini_bbm](#amdini_bbm)
 + [amdini_bbv](#amdini_bbv)
 + [amdini_bbl](#amdini_bbl)
++ [db_module](#dp_module)
 + [dp_singleton](#dp_singleton)
 
 ##### amdini
